@@ -1,5 +1,7 @@
 <template>
   <div>
+    <Navbar/>
+    <h5>IT's a Helloworld Page</h5>
     <b-alert show dismissible>Default Alert</b-alert>
 
     <b-alert variant="success" show>Success Alert</b-alert>
@@ -22,7 +24,7 @@
         variant="warning"
         :max="dismissSecs"
         :value="this.dismissCountDown"
-        height="2px"
+        height="4px"
       ></b-progress>
     </b-alert>
 
@@ -36,8 +38,12 @@
 </template>
 
 <script>
+import Navbar from './Navbar'
 export default {
   name: "HelloWorld",
+  components:{
+    Navbar
+  },
   props: {
     msg: String,
   },
@@ -45,7 +51,7 @@ export default {
   {
     return{
       showDismissibleAlert:false,
-      dismissSecs:3,
+      dismissSecs:8,
       dismissCountDown:0
     }
   },
