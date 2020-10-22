@@ -12,6 +12,9 @@
              <b-nav-item>
             <router-link to="/add"><p style="color:white;">Add Record</p></router-link>
             </b-nav-item>
+             <b-nav-item>
+            <router-link to="/postapi"><p style="color:white;">Post Data API</p></router-link>
+            </b-nav-item>
         
         </b-navbar-nav>
 
