@@ -15,6 +15,9 @@
              <b-nav-item>
             <router-link to="/postapi"><p style="color:white;">Post Data API</p></router-link>
             </b-nav-item>
+             <b-nav-item>
+            <router-link to="/Map"><p style="color:white;">Map</p></router-link>
+            </b-nav-item>
         
         </b-navbar-nav>
 
