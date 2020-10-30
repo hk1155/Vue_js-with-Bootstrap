@@ -1,6 +1,6 @@
 <template>
   <div>
-      <Navbar/>
+    <Navbar />
     <h4>Current Coordinates</h4>
     <p>{{ startLocation.lat }} Latitude, {{ startLocation.lng }} Longtitude</p>
     <hr />
@@ -26,7 +26,7 @@
     <center>
       <GmapMap
         :center="Mydata"
-        :zoom="2"
+        :zoom="3"
         map-type-id="terrain"
         style="width: 900px; height: 400px"
         ref="mapRef"
@@ -98,16 +98,16 @@ export default {
         lng: this.map.getCenter().lng(),
       };
     },
-
     Mydata() {
       if (this.txtlat == null && this.txtlng == null) {
         return {
-          //lat: 10,
-          //lng: 20,
-          lat: this.startLocation.lat,
-          lng: this.startLocation.lng,
+          lat: 21,
+          lng: 72.50,
+          // lat: this.startLocation.lat,
+          // lng: this.startLocation.lng,
         };
       }
+          
       return {
         lat: this.txtlat,
         lng: this.txtlng,
